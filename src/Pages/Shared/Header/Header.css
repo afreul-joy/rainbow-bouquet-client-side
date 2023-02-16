@@ -1,0 +1,55 @@
+.navigation{
+    box-shadow: 0 5px 10px gray;
+}
+
+.navmenu a{
+    background-color: #FDF6EC;;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 19px;
+    color: black;
+    font-weight: 500;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.navmenu .selected{
+    border: 1px solid black;
+    font-weight: bold;
+    color: black;
+    
+}
+
+.loginBtn{
+    background-color: #3498db;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.loginBtn:hover{
+    background-color: #1d7cbb;
+}
+
+.loginButton{
+    display: inline;
+}
+
+@media only screen and (max-width: 575px) {
+    .navmenu a{
+        display: block;
+        text-align: center;
+    }
+    .loginButton{
+        display: block;
+        text-align: center;
+        margin-top: 8px;
+    }
+}
+
+
+
+
+
+

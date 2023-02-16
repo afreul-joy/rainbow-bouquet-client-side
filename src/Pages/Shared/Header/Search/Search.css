@@ -1,0 +1,29 @@
+.search-section{
+    display: flex;
+    justify-content: center;
+}
+.search-bar{
+    border: none;
+    background-color:  #FDF6EC;
+    border-radius: 10px 0 0 10px;
+    border-color: coral;
+    color: black;
+}
+.search-bar::placeholder{
+    color: black;
+}
+.search-btn{
+    background-color: #FDF6EC;
+    border: none;
+    outline: none;
+    border-radius: 0 8px 8px 0
+}
+.search-logo{
+    color: black;
+}
+@media only screen and (max-width: 768px){
+    .search-section{
+        transform: scale(0.7);
+        display: flex;
+    }
+}

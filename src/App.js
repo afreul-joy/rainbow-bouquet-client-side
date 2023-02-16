@@ -1,24 +1,46 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header from './Pages/Shared/Header/Header';
+import { Route, Routes } from 'react-router-dom';
+import Footer from './Pages/Shared/Footer/Footer';
+import Login from './Pages/User/Authentication/Login/Login';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header></Header>
+
+<Routes>
+  <Route path="/login" element={<Login></Login>}></Route>
+
+  {/* <Route path="/billing" element={<Billing></Billing>}></Route> */}
+
+  {/* <Route path="/dashboard" element={<Dashboard></Dashboard>}>
+    <Route path="/dashboard" element={<DashboardHome />} />
+    <Route path="/dashboard/review" element={<ReviewDashboard />} />
+    <Route path="/dashboard/makeAdmin" element={<MakeAnAdmin />} />
+    <Route path="/dashboard/myOrders" element={<MyOrder />} />
+    <Route path="/dashboard/pay/:id" element={<Payment />} />
+    <Route path="/dashboard/addMeals" element={<AddMeals />} />
+    <Route path="/dashboard/deleteMeal" element={<DeleteMeal />} />
+    <Route path="/dashboard/manageOrders" element={<ManageOrders />} />
+  </Route> */}
+
+  {/* <Route path="/myOrders/:id" element={<Edit></Edit>}></Route> */}
+
+  {/* <Route path="/meals/:id" element={ <><PrivetRoute><BuyNow></BuyNow></PrivetRoute> </> }></Route> */}
+
+  {/* <Route path="/" element={<Home></Home>}>
+    <Route path="/" element={<Lunch />} />
+    <Route path="/breakfast" element={<Breakfast />} />
+    <Route path="/lunch" element={<Lunch />} />
+    <Route path="/dinner" element={<Dinner />} />
+  </Route> */}
+
+  {/* <Route path="*" element={<Error></Error>}></Route> */}
+</Routes>
+<Footer></Footer>
+    </>
   );
 }
 
