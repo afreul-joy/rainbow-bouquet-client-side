@@ -4,6 +4,7 @@ import Header from './Pages/Shared/Header/Header';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './Pages/Shared/Footer/Footer';
 import Login from './Pages/User/Authentication/Login/Login';
+import Home from './Pages/Home/Home';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
 <Routes>
   <Route path="/login" element={<Login></Login>}></Route>
 
-  {/* <Route path="/billing" element={<Billing></Billing>}></Route> */}
+  <Route path="/" element={<Home></Home>}></Route>
 
   {/* <Route path="/dashboard" element={<Dashboard></Dashboard>}>
     <Route path="/dashboard" element={<DashboardHome />} />

@@ -1,5 +1,4 @@
 import React from "react";
-import { Button, Form } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -17,7 +16,7 @@ const Header = () => {
             <img width="80px" height="80px" src={brand} alt="logo" /> 
           </Navbar.Brand>
           <Navbar.Brand as={Link} to="/">
-          Rainbow Bouquet
+          <span id="brandName"> <h6>Rainbow <br/> Bouquet</h6> </span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -38,7 +37,7 @@ const Header = () => {
                     selected.isActive ? "selected" : ""
                   }
                 >
-                 <i className="fa fa-user-o fa-1x"></i>
+                 <i className="	fas fa-user-alt fa-1x"></i>
                 </NavLink>
 
                 <NavLink
@@ -47,7 +46,7 @@ const Header = () => {
                     selected.isActive ? "selected" : ""
                   }
                 >
-                 <i className="fa fa-heart-o fa-1x"></i>
+                 <i className="far fa-heart fa-1x"></i>
                 </NavLink>
 
 
@@ -58,7 +57,7 @@ const Header = () => {
                     selected.isActive ? "selected" : ""
                   }
                 >
-                 <i className="fa fa-star-o fa-1x"></i>
+                 <i className="	far fa-star fa-1x"></i>
                 </NavLink>
 
                 <NavLink

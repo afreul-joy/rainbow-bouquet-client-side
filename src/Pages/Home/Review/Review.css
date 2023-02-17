@@ -1,0 +1,10 @@
+.review{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.icon-color{
+    color:#1d7cbb;
+  }

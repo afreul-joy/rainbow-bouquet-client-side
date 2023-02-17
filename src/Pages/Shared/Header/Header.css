@@ -1,7 +1,9 @@
 .navigation{
     box-shadow: 0 5px 10px gray;
 }
-
+#brandName{
+    font-weight: bold;
+}
 .navmenu a{
     background-color: #FDF6EC;;
     text-decoration: none;
